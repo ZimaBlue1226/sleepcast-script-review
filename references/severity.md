@@ -8,6 +8,8 @@ Severity describes the defect's impact, not which task should be done first. Con
 | P1 | A demonstrable defect causes misunderstanding, an interruption in comprehension, conspicuous loss of immersion or local arousal, while the central experience remains viable. | Examples include meaning-changing grammar, unresolved reference, incoherent movement, conspicuous translation-like language or a new suspense thread during descent. |
 | P2 | Meaning, logic and the core experience remain intact, but a demonstrable local expression or pacing defect reduces fluency. | Examples include unnecessary adjacent repetition, redundant description or mildly awkward phrasing. Equally natural alternatives are preferences, not findings. |
 
+A mandatory obligation to remain awake or sustain monitoring until the experience ends is P0 when it prevents the central sleep experience, even without an explicit threat or punishment. A brief, localized arousing demand that leaves the overall sleep experience viable is P1. Gentle optional attention with permission to let it go is not a defect by itself.
+
 An isolated defect can be P0; a long repair need not be. Numerous P1 instances do not automatically become P0. A grammar problem is not automatically minor or major. “Closed,” “deep water,” and “height” alone do not establish danger: examine freedom of movement, surroundings and the described experience.
 
 Explain severity through the quoted passage's effect. If a benign reading is established by context, do not promote a speculative harmful reading to a finding. Natural fragments and gentle ongoing movement may be appropriate.
