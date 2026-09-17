@@ -1,0 +1,62 @@
+# sleepcast-script-review
+
+[English](README.md)
+
+审查面向成人的英文 SleepCast 脚本，输出中文审查报告，包含英文原文、建议替换文本及各自中文翻译，方便人工对照。
+
+## 安装
+
+使用有权限的账号克隆此私有仓库：
+
+```sh
+git clone https://github.com/ZimaBlue1226/sleepcast-script-review.git
+```
+
+将完整的 `sleepcast-script-review` 文件夹放入所用 agent 的 skills 目录，保持 `SKILL.md` 与 `references/` 一起存放。已有安装可使用这些文件更新，替换前保留自己的本地修改。
+
+## 使用
+
+调用 skill，附上脚本 Markdown 文件或提供本地路径：
+
+```text
+使用 $sleepcast-script-review 审查 ./scripts/episode.md。
+```
+
+指定报告保存位置：
+
+```text
+使用 $sleepcast-script-review 审查 ./scripts/episode.md。
+报告保存到 ./reviews/。
+```
+
+只需提供脚本文件。skill 根据英文识别题材，不要求补充类别或主题大纲。支持纯英文和中英双语文件，英文正文是唯一审查依据，不审查输入的中文。空文件、只有中文或只有标签的文件无法审查；片段按实际范围审查。
+
+## 审查范围
+
+- 北美英语自然表达与纯听觉理解。
+- 成人助眠适配性、安全感及低压力叙述。
+- 叙事、空间和感知逻辑。
+- 题材一致性，适用时增加幻想世界规则检查。
+- 节奏、重复和冗余。
+
+优先级表示问题严重程度，不表示修改顺序：
+
+| 等级 | 含义 |
+|---|---|
+| P0 | 明确破坏安全体验，或使核心体验无法成立。 |
+| P1 | 明确缺陷造成误解、理解中断、出戏或局部唤醒，但核心体验仍成立。 |
+| P2 | 存在明确的表达或节奏缺陷，降低流畅度，但不影响理解与核心体验。 |
+
+个人偏好不计入问题。BGM、音频标签、TTS 实现效果和合成时长不在审查范围内。
+
+## 输出
+
+输出一个 UTF-8 Markdown 文件：`<输入文件名去掉扩展名>-审查报告.md`，默认与输入文件同目录。用户指定目录时采用指定位置，报告重名时使用未占用的版本后缀。
+
+报告包含审核范围、问题统计、详细问题和审核结论。每条问题包含 ID、严重程度、类型、原文件行号、问题说明、英文原文及建议替换文本，并根据这些英文提供中文翻译。原文有 PART 时同时标注。涉及核心创作选择的修改标记为待确认。没有发现问题也输出报告。
+
+原脚本保持不变。skill 不自动改写、不循环复审、不发布报告或发送通知。
+
+## 维护
+
+直接维护 [SKILL.md](SKILL.md) 及内置的[通用标准](references/general-standards.md)、[幻想标准](references/fantasy-standards.md)、[严重程度定义](references/severity.md)和[报告模板](references/report-template.md)。使用时不依赖飞书、外部 SOP 下载或其他 skill。
