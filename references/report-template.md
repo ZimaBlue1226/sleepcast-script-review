@@ -2,7 +2,7 @@
 
 Fill the following template in Chinese. Retain its four main sections. Repeat finding entries under the appropriate type, ordered by severity within each type. Omit template instructions from the delivered report.
 
-Identify the input by its actual filename and a supplied version or observed file modification date; do not invent a version. State English-only review, applicable standards and whether the input is a complete script or excerpt. Chinese passages are reviewer aids translated from the English quoted here.
+Identify the input by its actual filename and a supplied version or observed file modification date; do not invent a version. State English-only review, the user's selected review category, applicable standards and whether the input is a complete script or excerpt. Chinese passages are reviewer aids translated from the English quoted here.
 
 For zero findings, use zero totals and “在本次审查范围内未发现有充分依据的问题。” in the detail section. For a pending creative choice, retain the replacement field as “待确认：…” and explain the unresolved decision in the suggestion; do not fabricate replacement English or Chinese. If a finding spans several locations, pair each exact excerpt with its own translation and repair or clearly identify the shared consolidated repair.
 

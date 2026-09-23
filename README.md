@@ -29,7 +29,7 @@ Use $sleepcast-script-review to review ./scripts/episode.md.
 Save the report in ./reviews/.
 ```
 
-Only the script file is required. The skill infers the genre from the English; no category or theme outline is required. It accepts English-only and bilingual files. English narration is the sole review basis; any supplied Chinese is not reviewed. Empty, Chinese-only or markup-only inputs cannot be reviewed. Excerpts are reviewed within their stated scope.
+Provide the script file and select a review category: vintage/realistic (古典类) or secondary-world fantasy (第二世界幻想类). If you have not explicitly selected one for this script, the skill asks and waits before reviewing; it does not infer or default the category. Vintage/realistic uses the general standards; secondary-world fantasy adds the fantasy standards. No theme outline is required. The subsequent review workflow is unchanged. It accepts English-only and bilingual files. English narration is the sole review basis; any supplied Chinese is not reviewed. Empty, Chinese-only or markup-only inputs cannot be reviewed. Excerpts are reviewed within their stated scope.
 
 ## Review scope
 
